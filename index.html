@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css"/>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/graph.js"></script>
+    
+    <style type="text/css">
+        span {
+            color: blue;
+        }
+        .left {
+            float: left;
+        }
+        .percent {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ececec;
+            text-align: center;
+        }
+        .center {
+            text-align: center;
+        }
+        h1 {
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h1 class="center">Dashboard</h1>
+    
+    <div class="center">
+        <h4>1. Select Discipline <span id="select-discipline"></span></h4>
+    </div>
+    
+    <div class="percent">
+        <h4>2. Percentage</h4>
+        <h4>Percent Women Prof <span id="percent-women-prof"></span> | Percent Men Prof <span id="percent-men-prof"></span></h5>
+    </div>
+    
+    <div class="left">
+        <h4>3. Gender Balance</h4>
+        <div id="gender-balance"></div>
+    </div>
+    
+    <div class="left">
+        <h4>4. Average Salary</h4>
+        <span id="average-salary"></span>
+    </div>
+    
+    <div class="left">
+        <h4>5. Rank distribution</h4>
+        <span id="rank-distribution"></span>
+    </div>
+    
+    <div class="left">
+        <h4>6. Salary to years of service</h4>
+        <span id="service-salary"></span>
+    </div>
+    
+    <div class="left">
+        <h4>7. Phd to salary correlation</h4>
+        <span id="phd-salary"></span>
+    </div>
+    
+</body>
+</html>
